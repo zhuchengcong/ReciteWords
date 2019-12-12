@@ -4,7 +4,7 @@ const config = require('../config/config');
 
 
 exports.getToken = (account) => {
-    return jwt.sign({ content: account }, config.secretOrPrivateKey, {
+    return jwt.sign({ account: account }, config.secretOrPrivateKey, {
         expiresIn: '10h'
     })
 }

@@ -3,5 +3,7 @@
 
 
 module.exports = {
-    secretOrPrivateKey:'~!@#$(*&^%$&'
+    secretOrPrivateKey: '~!@#$(*&^%$&',
+    errparam: { msg: '参数非法' },
+    err401: { msg: '没有权限' }
 }
